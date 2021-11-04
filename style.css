@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+
+}
+
+#container {
+    width: 100%;
+}
+
+#div1 {
+    background-color: white;
+    font-size: 2.5rem;
+    color: black;
+    width: 300px;
+    height: 300px;
+    animation-name: backgroundC;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+@keyframes backgroundC {
+
+    0% {
+        background-color: white;
+        color: black;
+        width: 300px;
+        height: 300px;
+        font-size: 2.5rem;
+        transform-origin: center center;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        background-color: #bbb9b9;
+        color: #3b3131;
+        width: 320px;
+        height: 320px;
+        font-size: 2.6rem;
+        transform-origin: center center;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        background-color: #7d7b7b;
+        color: #6a2e2e;
+        width: 340px;
+        height: 340px;
+        font-size: 2.7rem;
+        transform-origin: center center;
+        transform: rotate(90deg);
+    }
+
+    75% {
+        background-color: #403f3f;
+        color: #a02020;
+        width: 360px;
+        height: 360px;
+        font-size: 2.8rem;
+        transform-origin: center center;
+        transform: rotate(135deg);
+    }
+
+    100% {
+        background-color: #020202;
+        color: #ff0000;
+        width: 380px;
+        height: 380px;
+        font-size: 3rem;
+        transform-origin: center center;
+        transform: rotate(180deg);
+    }
+}
+
+#bonus {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    animation-name: bonus;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bonus {
+
+    0% {
+        margin-left: 1%;
+    }
+
+    100% {
+        margin-left: 90%;
+    }
+}
